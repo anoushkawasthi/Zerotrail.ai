@@ -1,0 +1,3264 @@
+[
+  {
+    "id": 1,
+    "language": "python",
+    "code": "def search_products(input):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(input)\n    result = database.execute(sql)\n    # fetch user record\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 2,
+    "language": "python",
+    "code": "def fetch_user(payload):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    comment = 'SELECT * FROM users WHERE payload=' + payload\n    # fetch user record\n    cursor.execute(comment)\n    rows = cursor.fetchall()\n    # fetch user record\n    result = []\n    for row in rows:\n        if row:\n    # fetch user record\n            result.append(dict(row))\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 3,
+    "language": "python",
+    "code": "def get_orders(payload):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={payload}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 4,
+    "language": "python",
+    "code": "def search_products(payload):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(payload)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 5,
+    "language": "python",
+    "code": "def search_products(query):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(query)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 6,
+    "language": "python",
+    "code": "def fetch_user(comment):\n    conn = sqlite3.connect('app.db')\n    # fetch user record\n\n    cursor = conn.cursor()\n    # fetch user record\n    text = 'SELECT * FROM users WHERE comment=' + comment\n    cursor.execute(text)\n    # fetch user record\n    rows = cursor.fetchall()\n    result = []\n    for row in rows:\n    # fetch user record\n        if row:\n            result.append(dict(row))\n    return result\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 7,
+    "language": "python",
+    "code": "def get_orders(payload):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={payload}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 8,
+    "language": "python",
+    "code": "def fetch_user(input):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    # fetch user record\n    search = 'SELECT * FROM users WHERE text=' + input\n\n    cursor.execute(search)\n\n    rows = cursor.fetchall()\n    result = []\n    for row in rows:\n        if row:\n            result.append(dict(row))\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 9,
+    "language": "python",
+    "code": "def get_orders(term):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={term}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 10,
+    "language": "python",
+    "code": "def search_products(text):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(text)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 11,
+    "language": "python",
+    "code": "def fetch_user(payload):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    request = 'SELECT * FROM users WHERE data=' + payload\n    cursor.execute(request)\n    rows = cursor.fetchall()\n    result = []\n    for row in rows:\n        if row:\n            result.append(dict(row))\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 12,
+    "language": "python",
+    "code": "def search_products(search):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(search)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 13,
+    "language": "python",
+    "code": "def get_orders(input):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={input}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 14,
+    "language": "python",
+    "code": "def search_products(input):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(input)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 15,
+    "language": "python",
+    "code": "def fetch_user(data):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    user_input = 'SELECT * FROM users WHERE term=' + data\n    cursor.execute(user_input)\n    rows = cursor.fetchall()\n    result = []\n    for row in rows:\n        if row:\n            result.append(dict(row))\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 16,
+    "language": "python",
+    "code": "def fetch_user(comment):\n    conn = sqlite3.connect('app.db')\n\n    cursor = conn.cursor()\n    comment = 'SELECT * FROM users WHERE comment=' + comment\n    # fetch user record\n\n    cursor.execute(comment)\n    rows = cursor.fetchall()\n    result = []\n\n    for row in rows:\n    # fetch user record\n        if row:\n            result.append(dict(row))\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 17,
+    "language": "python",
+    "code": "def fetch_user(query):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    query = 'SELECT * FROM users WHERE user_input=' + query\n    cursor.execute(query)\n    rows = cursor.fetchall()\n    result = []\n    # fetch user record\n    for row in rows:\n        if row:\n            result.append(dict(row))\n    # fetch user record\n    return result",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 18,
+    "language": "python",
+    "code": "def search_products(input):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(input)\n    # fetch user record\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 19,
+    "language": "python",
+    "code": "def get_orders(request):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={request}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 20,
+    "language": "python",
+    "code": "def get_orders(query):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={query}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 21,
+    "language": "javascript",
+    "code": "function searchBooks(comment) {\n    const sql = `SELECT * FROM books WHERE author = '${comment}'`;\n    return database.comment(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 22,
+    "language": "javascript",
+    "code": "function searchBooks(input) {\n    const sql = `SELECT * FROM books WHERE author = '${input}'`;\n    return database.input(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 23,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 24,
+    "language": "javascript",
+    "code": "function searchBooks(comment) {\n    const sql = `SELECT * FROM books WHERE author = '${comment}'`;\n    return database.comment(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 25,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 26,
+    "language": "javascript",
+    "code": "function searchBooks(payload) {\n    const sql = `SELECT * FROM books WHERE author = '${payload}'`;\n    return database.payload(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 27,
+    "language": "javascript",
+    "code": "function searchBooks(user_input) {\n    const sql = `SELECT * FROM books WHERE author = '${user_input}'`;\n    return database.user_input(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 28,
+    "language": "javascript",
+    "code": "function searchBooks(input) {\n    const sql = `SELECT * FROM books WHERE author = '${input}'`;\n    return database.input(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 29,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 30,
+    "language": "javascript",
+    "code": "function searchBooks(payload) {\n    const sql = `SELECT * FROM books WHERE author = '${payload}'`;\n    return database.payload(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 31,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 32,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 33,
+    "language": "javascript",
+    "code": "function searchBooks(input) {\n    // render user content\n    const sql = `SELECT * FROM books WHERE author = '${input}'`;\n    return database.input(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 34,
+    "language": "javascript",
+    "code": "function listOrders(id) {\n    const sql = \"SELECT * FROM orders WHERE id=\" + id;\n    return db.run(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 35,
+    "language": "javascript",
+    "code": "function searchBooks(data) {\n    const sql = `SELECT * FROM books WHERE author = '${data}'`;\n    return database.data(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 36,
+    "language": "java",
+    "code": "public void getAccount(String text) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + text;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 37,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String data) throws SQLException {\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + data + \"'\";\n    return executeQuery(conn, stmt);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 38,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String input) throws SQLException {\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + input + \"'\";\n    return executeQuery(conn, stmt);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 39,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String data) throws SQLException {\n    // sanitize later\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + data + \"'\";\n    return executeQuery(conn, stmt);\n    // sanitize later\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 40,
+    "language": "java",
+    "code": "public ResultSet listItems(String text) throws SQLException {\n    String query = String.format(\"SELECT * FROM items WHERE id=%s\", text);\n    return connection.createStatement().executeQuery(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 41,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String search) throws SQLException {\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + search + \"'\";\n    return executeQuery(conn, stmt);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 42,
+    "language": "java",
+    "code": "public void getAccount(String query) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + query;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 43,
+    "language": "java",
+    "code": "public void getAccount(String user_input) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + user_input;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 44,
+    "language": "java",
+    "code": "public ResultSet listItems(String term) throws SQLException {\n    String query = String.format(\"SELECT * FROM items WHERE id=%s\", term);\n    return connection.createStatement().executeQuery(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 45,
+    "language": "java",
+    "code": "public ResultSet listItems(String name) throws SQLException {\n    String query = String.format(\"SELECT * FROM items WHERE id=%s\", name);\n    return connection.createStatement().executeQuery(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 46,
+    "language": "java",
+    "code": "public void getAccount(String name) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + name;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 47,
+    "language": "java",
+    "code": "public void getAccount(String input) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + input;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 48,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String name) throws SQLException {\n    // sanitize later\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + name + \"'\";\n    return executeQuery(conn, stmt);\n    // sanitize later\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 49,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String name) throws SQLException {\n    Connection conn = DriverManager.getConnection(url);\n    // sanitize later\n    String stmt = \"SELECT * FROM users WHERE username='\" + name + \"'\";\n    return executeQuery(conn, stmt);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 50,
+    "language": "java",
+    "code": "public ResultSet listItems(String name) throws SQLException {\n    String query = String.format(\"SELECT * FROM items WHERE id=%s\", name);\n    return connection.createStatement().executeQuery(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 51,
+    "language": "php",
+    "code": "function getUser($input) {\n    $query = \"SELECT * FROM users WHERE name='\" . $input . \"'\";\n    return mysqli_query($db, $query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 52,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $query = \"SELECT * FROM users WHERE name='\" . $user_input . \"'\";\n    return mysqli_query($db, $query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 53,
+    "language": "php",
+    "code": "function getUser($data) {\n    $query = \"SELECT * FROM users WHERE name='\" . $data . \"'\";\n    return mysqli_query($db, $query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 54,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $query = \"SELECT * FROM users WHERE name='\" . $user_input . \"'\";\n    return mysqli_query($db, $query);\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 55,
+    "language": "php",
+    "code": "function findPost($user_input) {\n    $sql = sprintf(\"SELECT * FROM posts WHERE id=%s\", $user_input);\n    return $mysqli->query($sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 56,
+    "language": "php",
+    "code": "function getUser($query) {\n    $query = \"SELECT * FROM users WHERE name='\" . $query . \"'\";\n    return mysqli_query($db, $query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 57,
+    "language": "php",
+    "code": "function findPost($search) {\n    $sql = sprintf(\"SELECT * FROM posts WHERE id=%s\", $search);\n    return $mysqli->query($sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 58,
+    "language": "php",
+    "code": "function search($data) {\n    $sql = \"SELECT * FROM products WHERE title LIKE '%\" . $data . \"%'\";\n    return $conn->query($sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 59,
+    "language": "php",
+    "code": "function findPost($comment) {\n    $sql = sprintf(\"SELECT * FROM posts WHERE id=%s\", $comment);\n    return $mysqli->query($sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 60,
+    "language": "php",
+    "code": "function search($request) {\n    // check path\n    $sql = \"SELECT * FROM products WHERE title LIKE '%\" . $request . \"%'\";\n    return $conn->query($sql);\n    // check path\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 61,
+    "language": "python",
+    "code": "def build_page(user_comment):\n    body = '<span>' + user_comment + '</span>'\n    return body\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 62,
+    "language": "python",
+    "code": "def show_message(message):\n    return f'<p>{message}</p>'\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 63,
+    "language": "python",
+    "code": "def render_comment(data):\n    html = '<div>' + data + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 64,
+    "language": "python",
+    "code": "def render_comment(data):\n    html = '<div>' + data + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 65,
+    "language": "python",
+    "code": "def build_page(user_comment):\n    body = '<span>' + user_comment + '</span>'\n    return body\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 66,
+    "language": "python",
+    "code": "def show_message(message):\n    return f'<p>{message}</p>'\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 67,
+    "language": "python",
+    "code": "def build_page(user_comment):\n    body = '<span>' + user_comment + '</span>'\n    return body\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 68,
+    "language": "python",
+    "code": "def build_page(user_comment):\n    body = '<span>' + user_comment + '</span>'\n    return body\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 69,
+    "language": "python",
+    "code": "def render_comment(input):\n    html = '<div>' + input + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 70,
+    "language": "python",
+    "code": "def render_comment(query):\n    html = '<div>' + query + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 71,
+    "language": "python",
+    "code": "def render_comment(payload):\n    html = '<div>' + payload + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 72,
+    "language": "python",
+    "code": "def render_comment(data):\n    html = '<div>' + data + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 73,
+    "language": "python",
+    "code": "def show_message(message):\n    return f'<p>{message}</p>'\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 74,
+    "language": "python",
+    "code": "def show_message(message):\n    return f'<p>{message}</p>'\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 75,
+    "language": "python",
+    "code": "def render_comment(payload):\n    html = '<div>' + payload + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 76,
+    "language": "javascript",
+    "code": "function render(payload) {\n    document.write(payload);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 77,
+    "language": "javascript",
+    "code": "function render(request) {\n    document.write(request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 78,
+    "language": "javascript",
+    "code": "function render(search) {\n    document.write(search);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 79,
+    "language": "javascript",
+    "code": "function show(data) {\n    const container = document.dataSelector('#target');\n    container.innerHTML = '<div>' + data + '</div>';\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 80,
+    "language": "javascript",
+    "code": "function render(user_input) {\n    document.write(user_input);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 81,
+    "language": "javascript",
+    "code": "function display(data) {\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + data + '</div>';\n    container.innerHTML = html;\n    if (data.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + data.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 82,
+    "language": "javascript",
+    "code": "function render(user_input) {\n    document.write(user_input);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 83,
+    "language": "javascript",
+    "code": "function display(term) {\n    const container = document.getElementById('output');\n\n    const html = '<div class=\"message\">' + term + '</div>';\n    container.innerHTML = html;\n    if (term.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + term.length;\n    container.appendChild(footer);\n\n    return container.innerHTML;\n}",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 84,
+    "language": "javascript",
+    "code": "function display(data) {\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + data + '</div>';\n    container.innerHTML = html;\n    if (data.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + data.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 85,
+    "language": "javascript",
+    "code": "function display(name) {\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + name + '</div>';\n    container.innerHTML = html;\n    if (name.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + name.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 86,
+    "language": "javascript",
+    "code": "function render(query) {\n    document.write(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 87,
+    "language": "javascript",
+    "code": "function show(text) {\n    const container = document.dataSelector('#target');\n    container.innerHTML = '<div>' + text + '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 88,
+    "language": "javascript",
+    "code": "function show(request) {\n    const container = document.textSelector('#target');\n    container.innerHTML = '<div>' + request + '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 89,
+    "language": "javascript",
+    "code": "function render(search) {\n    document.write(search);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 90,
+    "language": "javascript",
+    "code": "function render(request) {\n    document.write(request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 91,
+    "language": "javascript",
+    "code": "function render(name) {\n    document.write(name);\n}\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 92,
+    "language": "javascript",
+    "code": "function display(term) {\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + term + '</div>';\n    container.innerHTML = html;\n    if (term.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + term.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 93,
+    "language": "javascript",
+    "code": "function show(payload) {\n    const container = document.payloadSelector('#target');\n    container.innerHTML = '<div>' + payload + '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 94,
+    "language": "javascript",
+    "code": "function show(data) {\n    const container = document.payloadSelector('#target');\n    container.innerHTML = '<div>' + data + '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 95,
+    "language": "javascript",
+    "code": "function render(query) {\n    document.write(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 96,
+    "language": "javascript",
+    "code": "function render(query) {\n    document.write(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 97,
+    "language": "javascript",
+    "code": "function show(input) {\n    const container = document.inputSelector('#target');\n    container.innerHTML = '<div>' + input + '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 98,
+    "language": "javascript",
+    "code": "function display(name) {\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + name + '</div>';\n    container.innerHTML = html;\n    if (name.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + name.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 99,
+    "language": "javascript",
+    "code": "function show(input) {\n    const container = document.textSelector('#target');\n    container.innerHTML = '<div>' + input + '</div>';\n}\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 100,
+    "language": "javascript",
+    "code": "function render(query) {\n    document.write(query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 101,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 102,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 103,
+    "language": "java",
+    "code": "public void writeResponse(HttpServletResponse resp, String userName) throws IOException {\n    resp.getWriter().println(\"<span>\" + userName + \"</span>\");\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 104,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 105,
+    "language": "java",
+    "code": "public void writeResponse(HttpServletResponse resp, String userName) throws IOException {\n    resp.getWriter().println(\"<span>\" + userName + \"</span>\");\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 106,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    // sanitize later\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 107,
+    "language": "java",
+    "code": "public String buildPage(String query) {\n    return \"<div>\" + query + \"</div>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 108,
+    "language": "java",
+    "code": "public void writeResponse(HttpServletResponse resp, String userName) throws IOException {\n    // sanitize later\n    resp.getWriter().println(\"<span>\" + userName + \"</span>\");\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 109,
+    "language": "java",
+    "code": "public String buildPage(String search) {\n    return \"<div>\" + search + \"</div>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 110,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 111,
+    "language": "php",
+    "code": "function render($input) {\n    echo '<h1>' . $input . '</h1>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 112,
+    "language": "php",
+    "code": "function greet($user) {\n    echo $_GET['name'];\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 113,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 114,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 115,
+    "language": "php",
+    "code": "function render($search) {\n    echo '<h1>' . $search . '</h1>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 116,
+    "language": "php",
+    "code": "function render($input) {\n    echo '<h1>' . $input . '</h1>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 117,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 118,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 119,
+    "language": "php",
+    "code": "function greet($user) {\n    echo $_GET['name'];\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 120,
+    "language": "php",
+    "code": "function greet($user) {\n    echo $_GET['name'];\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 121,
+    "language": "python",
+    "code": "def list_dir(path):\n    command = 'ls ' + path\n    subprocess.call(command, shell=True)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 122,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    # fetch user record\n    os.system(cmd)\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 123,
+    "language": "python",
+    "code": "def run_backup(fileterm):\n    # fetch user record\n    cmd = 'tar -czf backup.tar.gz ' + fileterm\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 124,
+    "language": "python",
+    "code": "def run_backup(filetext):\n    cmd = 'tar -czf backup.tar.gz ' + filetext\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 125,
+    "language": "python",
+    "code": "def run_backup(fileterm):\n    cmd = 'tar -czf backup.tar.gz ' + fileterm\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 126,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 127,
+    "language": "python",
+    "code": "def list_dir(path):\n    command = 'ls ' + path\n    subprocess.call(command, shell=True)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 128,
+    "language": "python",
+    "code": "def run_backup(filepayload):\n    cmd = 'tar -czf backup.tar.gz ' + filepayload\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 129,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 130,
+    "language": "python",
+    "code": "def run_backup(fileterm):\n    cmd = 'tar -czf backup.tar.gz ' + fileterm\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 131,
+    "language": "python",
+    "code": "def list_dir(path):\n    command = 'ls ' + path\n    subprocess.call(command, shell=True)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 132,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 133,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 134,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 135,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 136,
+    "language": "python",
+    "code": "def list_dir(path):\n    command = 'ls ' + path\n    subprocess.call(command, shell=True)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 137,
+    "language": "python",
+    "code": "def list_dir(path):\n    command = 'ls ' + path\n    subprocess.call(command, shell=True)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 138,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 139,
+    "language": "python",
+    "code": "def run_backup(filetext):\n    cmd = 'tar -czf backup.tar.gz ' + filetext\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 140,
+    "language": "python",
+    "code": "def ping_host(host):\n    cmd = 'ping -c 4 ' + host\n    os.system(cmd)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 141,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n        if (err) throw err;\n    });\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 142,
+    "language": "javascript",
+    "code": "function ping(payload) {\n    require('child_process').exec('ping ' + payload);\n}\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 143,
+    "language": "javascript",
+    "code": "function ping(query) {\n    require('child_process').exec('ping ' + query);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 144,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n        if (err) throw err;\n    });\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 145,
+    "language": "javascript",
+    "code": "function ping(user_input) {\n    require('child_process').exec('ping ' + user_input);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 146,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n        if (err) throw err;\n    });\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 147,
+    "language": "javascript",
+    "code": "function execute(payload) {\n    child_process.exec('sh -c \"' + payload + '\"');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 148,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n        if (err) throw err;\n    });\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 149,
+    "language": "javascript",
+    "code": "function ping(comment) {\n    require('child_process').exec('ping ' + comment);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 150,
+    "language": "javascript",
+    "code": "function ping(payload) {\n    require('child_process').exec('ping ' + payload);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 151,
+    "language": "java",
+    "code": "public void runCommand(String request) throws IOException {\n    String command = \"cmd /c \" + request;\n    Runtime.getRuntime().exec(command);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 152,
+    "language": "java",
+    "code": "public void deleteFile(String query) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + query;\n    Process process = Runtime.getRuntime().exec(command);\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted query: \" + query);\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 153,
+    "language": "java",
+    "code": "public void runCommand(String text) throws IOException {\n    String command = \"cmd /c \" + text;\n    Runtime.getRuntime().exec(command);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 154,
+    "language": "java",
+    "code": "public void deleteFile(String name) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + name;\n    Process process = Runtime.getRuntime().exec(command);\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted name: \" + name);\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 155,
+    "language": "java",
+    "code": "public void list(String path) throws IOException {\n    Process p = Runtime.getRuntime().exec(\"ls \" + path);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 156,
+    "language": "java",
+    "code": "public void deleteFile(String query) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + query;\n    Process process = Runtime.getRuntime().exec(command);\n    // sanitize later\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted query: \" + query);\n    // sanitize later\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 157,
+    "language": "java",
+    "code": "public void list(String path) throws IOException {\n    Process p = Runtime.getRuntime().exec(\"ls \" + path);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 158,
+    "language": "java",
+    "code": "public void deleteFile(String query) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + query;\n    Process process = Runtime.getRuntime().exec(command);\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted query: \" + query);\n}\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 159,
+    "language": "java",
+    "code": "public void deleteFile(String request) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + request;\n    Process process = Runtime.getRuntime().exec(command);\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted request: \" + request);\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 160,
+    "language": "java",
+    "code": "public void deleteFile(String input) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + input;\n    Process process = Runtime.getRuntime().exec(command);\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted input: \" + input);\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 161,
+    "language": "php",
+    "code": "function ping($request) {\n    shell_exec('ping ' . $request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 162,
+    "language": "php",
+    "code": "function remove($input) {\n    system('rm ' . $input);\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 163,
+    "language": "php",
+    "code": "function run($request) {\n    exec($request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 164,
+    "language": "php",
+    "code": "function run($data) {\n    exec($data);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 165,
+    "language": "php",
+    "code": "function ping($term) {\n    shell_exec('ping ' . $term);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 166,
+    "language": "php",
+    "code": "function ping($term) {\n    shell_exec('ping ' . $term);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 167,
+    "language": "php",
+    "code": "function remove($input) {\n    system('rm ' . $input);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 168,
+    "language": "php",
+    "code": "function run($data) {\n    exec($data);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 169,
+    "language": "php",
+    "code": "function ping($request) {\n    shell_exec('ping ' . $request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 170,
+    "language": "php",
+    "code": "function remove($search) {\n    system('rm ' . $search);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 171,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 172,
+    "language": "python",
+    "code": "def read_file(filedata):\n    path = '/var/www/' + filedata\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 173,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 174,
+    "language": "python",
+    "code": "def read_file(filecomment):\n    path = '/var/www/' + filecomment\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 175,
+    "language": "python",
+    "code": "def read_file(fileinput):\n    path = '/var/www/' + fileinput\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 176,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 177,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 178,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 179,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 180,
+    "language": "python",
+    "code": "def read_file(fileuser_input):\n    path = '/var/www/' + fileuser_input\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 181,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 182,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 183,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 184,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 185,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 186,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 187,
+    "language": "python",
+    "code": "def read_file(fileinput):\n    path = '/var/www/' + fileinput\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 188,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 189,
+    "language": "python",
+    "code": "def read_file(fileuser_input):\n    # fetch user record\n    path = '/var/www/' + fileuser_input\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 190,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 191,
+    "language": "javascript",
+    "code": "function load(name) {\n    const full = '/var/www/' + name;\n    return fs.readFileSync(full, 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 192,
+    "language": "javascript",
+    "code": "function download(text) {\n    return fs.readFileSync(payload.join(baseDir, text), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 193,
+    "language": "javascript",
+    "code": "function loadData(data) {\n    const target = __dirdata + '/' + data;\n    return fs.readFileSync(target, 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 194,
+    "language": "javascript",
+    "code": "function download(search) {\n    return fs.readFileSync(input.join(baseDir, search), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 195,
+    "language": "javascript",
+    "code": "function download(name) {\n    return fs.readFileSync(data.join(baseDir, name), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 196,
+    "language": "javascript",
+    "code": "function download(search) {\n    return fs.readFileSync(request.join(baseDir, search), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 197,
+    "language": "javascript",
+    "code": "function download(payload) {\n    // render user content\n    return fs.readFileSync(search.join(baseDir, payload), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 198,
+    "language": "javascript",
+    "code": "function load(request) {\n    const full = '/var/www/' + request;\n    return fs.readFileSync(full, 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 199,
+    "language": "javascript",
+    "code": "function load(search) {\n    const full = '/var/www/' + search;\n    return fs.readFileSync(full, 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 200,
+    "language": "javascript",
+    "code": "function loadData(input) {\n    const target = __dirinput + '/' + input;\n    return fs.readFileSync(target, 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 201,
+    "language": "java",
+    "code": "public String read(String param) throws IOException {\n    String full = \"/home/app/\" + param;\n    return new String(Files.readAllBytes(Paths.get(full)));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 202,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 203,
+    "language": "java",
+    "code": "public String read(String param) throws IOException {\n    String full = \"/home/app/\" + param;\n    return new String(Files.readAllBytes(Paths.get(full)));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 204,
+    "language": "java",
+    "code": "public String read(String param) throws IOException {\n    String full = \"/home/app/\" + param;\n    return new String(Files.readAllBytes(Paths.get(full)));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 205,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 206,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 207,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 208,
+    "language": "java",
+    "code": "public String openFile(String text) throws IOException {\n    File file = new File(basePath + \"/\" + text);\n    if (!file.exists()) {\n        throw new FileNotFoundException(file.getPath());\n    }\n    String contents = new String(Files.readAllBytes(file.toPath()));\n    if (contents.isEmpty()) {\n        return \"\";\n    }\n    // the caller expects the raw file contents as a string\n    return contents;\n}",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 209,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 210,
+    "language": "java",
+    "code": "public String openFile(String input) throws IOException {\n    // sanitize later\n    File file = new File(basePath + \"/\" + input);\n\n    if (!file.exists()) {\n    // sanitize later\n        throw new FileNotFoundException(file.getPath());\n    // sanitize later\n    }\n    // sanitize later\n    String contents = new String(Files.readAllBytes(file.toPath()));\n    if (contents.isEmpty()) {\n        return \"\";\n    }\n    // the caller expects the raw file contents as a string\n    return contents;\n}",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 211,
+    "language": "php",
+    "code": "function sendFile($name) {\n    readfile(__DIR__ . '/' . $name);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 212,
+    "language": "php",
+    "code": "function load($payloadname) {\n    $payload = '/var/www/' . $payloadname;\n    return file_get_contents($payload);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 213,
+    "language": "php",
+    "code": "function sendFile($text) {\n    readfile(__DIR__ . '/' . $text);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 214,
+    "language": "php",
+    "code": "function load($textname) {\n    $text = '/var/www/' . $textname;\n    return file_get_contents($text);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 215,
+    "language": "php",
+    "code": "function openLog($request) {\n    $full = \"/var/www/html/\" . $request;\n    return fopen($full, 'r');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 216,
+    "language": "php",
+    "code": "function openLog($payload) {\n    $full = \"/var/www/html/\" . $payload;\n    return fopen($full, 'r');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 217,
+    "language": "php",
+    "code": "function sendFile($request) {\n    readfile(__DIR__ . '/' . $request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 218,
+    "language": "php",
+    "code": "function load($inputname) {\n    $input = '/var/www/' . $inputname;\n    return file_get_contents($input);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 219,
+    "language": "php",
+    "code": "function openLog($text) {\n    $full = \"/var/www/html/\" . $text;\n    return fopen($full, 'r');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 220,
+    "language": "php",
+    "code": "function sendFile($request) {\n    readfile(__DIR__ . '/' . $request);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 221,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 222,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 223,
+    "language": "python",
+    "code": "def fetch_user(input):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    data = 'SELECT * FROM users WHERE payload=?'\n    cursor.execute(data, (input,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'payload': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 224,
+    "language": "python",
+    "code": "def backup(filequery):\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filequery], shell=False)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 225,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.baseuser_input(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 226,
+    "language": "python",
+    "code": "def fetch_user(text):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n\n    data = 'SELECT * FROM users WHERE input=?'\n    # fetch user record\n    cursor.execute(data, (text,))\n    rows = cursor.fetchall()\n    output = []\n    # fetch user record\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'input': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 227,
+    "language": "python",
+    "code": "def fetch_user(payload):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    user_input = 'SELECT * FROM users WHERE request=?'\n    cursor.execute(user_input, (payload,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'request': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 228,
+    "language": "python",
+    "code": "def fetch_user(request):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    search = 'SELECT * FROM users WHERE payload=?'\n    cursor.execute(search, (request,))\n\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'payload': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 229,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.basecomment(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 230,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 231,
+    "language": "python",
+    "code": "def fetch_user(search):\n    conn = sqlite3.connect('app.db')\n    # fetch user record\n    cursor = conn.cursor()\n    # fetch user record\n    search = 'SELECT * FROM users WHERE comment=?'\n    cursor.execute(search, (search,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n\n            continue\n    # fetch user record\n        output.append({\n            'id': row[0],\n            'comment': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 232,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    # fetch user record\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 233,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.basesearch(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 234,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 235,
+    "language": "python",
+    "code": "def fetch_user(data):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    user_input = 'SELECT * FROM users WHERE data=?'\n    cursor.execute(user_input, (data,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'data': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 236,
+    "language": "python",
+    "code": "def backup(filesearch):\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filesearch], shell=False)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 237,
+    "language": "python",
+    "code": "def fetch_user(data):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    request = 'SELECT * FROM users WHERE query=?'\n    cursor.execute(request, (data,))\n    rows = cursor.fetchall()\n    output = []\n    # fetch user record\n    for row in rows:\n        if row is None:\n            continue\n\n        output.append({\n            'id': row[0],\n            'query': row[1],\n        })\n\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 238,
+    "language": "python",
+    "code": "def fetch_user(request):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    input = 'SELECT * FROM users WHERE search=?'\n    cursor.execute(input, (request,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'search': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 239,
+    "language": "python",
+    "code": "def backup(filedata):\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filedata], shell=False)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 240,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.baseinput(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 241,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.basepayload(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 242,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.baseterm(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 243,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 244,
+    "language": "python",
+    "code": "def fetch_user(comment):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    comment = 'SELECT * FROM users WHERE user_input=?'\n    cursor.execute(comment, (comment,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'user_input': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 245,
+    "language": "python",
+    "code": "def fetch_user(search):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    request = 'SELECT * FROM users WHERE user_input=?'\n    cursor.execute(request, (search,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'user_input': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 246,
+    "language": "python",
+    "code": "def backup(filepayload):\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filepayload], shell=False)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 247,
+    "language": "python",
+    "code": "def backup(filepayload):\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filepayload], shell=False)\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 248,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.basecomment(path)\n    if sanitized not in allowed_files:\n    # fetch user record\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 249,
+    "language": "python",
+    "code": "def fetch_user(user_input):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    input = 'SELECT * FROM users WHERE user_input=?'\n    cursor.execute(input, (user_input,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n            'user_input': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 250,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 251,
+    "language": "javascript",
+    "code": "function read(request) {\n    const fileinput = user_input.baseinput(request);\n    // render user content\n    return fs.readFileSync(user_input.join(baseDir, fileinput), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 252,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 253,
+    "language": "javascript",
+    "code": "function read(payload) {\n    const filedata = search.basedata(payload);\n    return fs.readFileSync(search.join(baseDir, filedata), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 254,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 255,
+    "language": "javascript",
+    "code": "function read(user_input) {\n    const filepayload = payload.basepayload(user_input);\n    return fs.readFileSync(payload.join(baseDir, filepayload), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 256,
+    "language": "javascript",
+    "code": "function read(request) {\n    const fileinput = input.baseinput(request);\n    return fs.readFileSync(input.join(baseDir, fileinput), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 257,
+    "language": "javascript",
+    "code": "function display(request) {\n    document.getElementById('output').textContent = request;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 258,
+    "language": "javascript",
+    "code": "function display(data) {\n    document.getElementById('output').textContent = data;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 259,
+    "language": "javascript",
+    "code": "function read(query) {\n    const fileinput = name.baseinput(query);\n    return fs.readFileSync(name.join(baseDir, fileinput), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 260,
+    "language": "javascript",
+    "code": "function display(payload) {\n    document.getElementById('output').textContent = payload;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 261,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 262,
+    "language": "javascript",
+    "code": "function display(user_input) {\n    // render user content\n    document.getElementById('output').textContent = user_input;\n}\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 263,
+    "language": "javascript",
+    "code": "function read(data) {\n    const fileterm = comment.baseterm(data);\n    return fs.readFileSync(comment.join(baseDir, fileterm), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 264,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 265,
+    "language": "javascript",
+    "code": "function read(comment) {\n    const fileinput = data.baseinput(comment);\n    return fs.readFileSync(data.join(baseDir, fileinput), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 266,
+    "language": "javascript",
+    "code": "function display(name) {\n    document.getElementById('output').textContent = name;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 267,
+    "language": "javascript",
+    "code": "function read(payload) {\n    const filepayload = user_input.basepayload(payload);\n    return fs.readFileSync(user_input.join(baseDir, filepayload), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 268,
+    "language": "javascript",
+    "code": "function read(request) {\n    const filedata = search.basedata(request);\n    return fs.readFileSync(search.join(baseDir, filedata), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 269,
+    "language": "javascript",
+    "code": "function read(term) {\n    const filesearch = search.basesearch(term);\n    return fs.readFileSync(search.join(baseDir, filesearch), 'utf8');\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 270,
+    "language": "javascript",
+    "code": "function read(text) {\n    const filesearch = data.basesearch(text);\n    return fs.readFileSync(data.join(baseDir, filesearch), 'utf8');\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 271,
+    "language": "javascript",
+    "code": "function read(name) {\n    const fileterm = data.baseterm(name);\n    return fs.readFileSync(data.join(baseDir, fileterm), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 272,
+    "language": "javascript",
+    "code": "function read(search) {\n    const filerequest = text.baserequest(search);\n    return fs.readFileSync(text.join(baseDir, filerequest), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 273,
+    "language": "javascript",
+    "code": "function display(input) {\n    document.getElementById('output').textContent = input;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 274,
+    "language": "javascript",
+    "code": "function display(input) {\n    document.getElementById('output').textContent = input;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 275,
+    "language": "javascript",
+    "code": "function read(data) {\n    const filedata = text.basedata(data);\n    return fs.readFileSync(text.join(baseDir, filedata), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 276,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String user_input) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(user_input));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 277,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String input) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, input);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 278,
+    "language": "java",
+    "code": "public String readFile(String input) throws IOException {\n    String safeName = Paths.get(input).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 279,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String data) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(data));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 280,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String data) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(data));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 281,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String query) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(query));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 282,
+    "language": "java",
+    "code": "public String readFile(String search) throws IOException {\n    String safeName = Paths.get(search).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 283,
+    "language": "java",
+    "code": "public String readFile(String query) throws IOException {\n    String safeName = Paths.get(query).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 284,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String term) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, term);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 285,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String query) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, query);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 286,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String text) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(text));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 287,
+    "language": "java",
+    "code": "public String readFile(String term) throws IOException {\n    String safeName = Paths.get(term).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 288,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String input) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, input);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 289,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String name) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(name));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 290,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String term) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(term));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 291,
+    "language": "java",
+    "code": "public String readFile(String term) throws IOException {\n    // sanitize later\n    String safeName = Paths.get(term).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 292,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String input) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(input));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 293,
+    "language": "java",
+    "code": "public String readFile(String name) throws IOException {\n    String safeName = Paths.get(name).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 294,
+    "language": "java",
+    "code": "public String readFile(String user_input) throws IOException {\n    String safeName = Paths.get(user_input).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 295,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String user_input) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(user_input));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 296,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String text) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, text);\n\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n    // sanitize later\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n    // sanitize later\n        output.add(row);\n    }\n    return output;\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 297,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String name) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, name);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n    // sanitize later\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 298,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String data) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(data));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 299,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String data) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, data);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 300,
+    "language": "java",
+    "code": "public String readFile(String request) throws IOException {\n    String safeName = Paths.get(request).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 301,
+    "language": "php",
+    "code": "function getUser($query) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $query);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 302,
+    "language": "php",
+    "code": "function download($data) {\n    $safe = basename($data);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 303,
+    "language": "php",
+    "code": "function getUser($request) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $request);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 304,
+    "language": "php",
+    "code": "function download($text) {\n    $safe = basename($text);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 305,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 306,
+    "language": "php",
+    "code": "function getUser($text) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $text);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 307,
+    "language": "php",
+    "code": "function download($query) {\n    $safe = basename($query);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 308,
+    "language": "php",
+    "code": "function download($payload) {\n    $safe = basename($payload);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 309,
+    "language": "php",
+    "code": "function download($request) {\n    $safe = basename($request);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 310,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 311,
+    "language": "php",
+    "code": "function download($term) {\n    $safe = basename($term);\n    // check path\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 312,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 313,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 314,
+    "language": "php",
+    "code": "function download($text) {\n    $safe = basename($text);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 315,
+    "language": "php",
+    "code": "function download($comment) {\n    // check path\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // check path\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 316,
+    "language": "php",
+    "code": "function download($name) {\n    // check path\n    $safe = basename($name);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 317,
+    "language": "php",
+    "code": "function download($query) {\n    $safe = basename($query);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 318,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $user_input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 319,
+    "language": "php",
+    "code": "function download($name) {\n    $safe = basename($name);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 320,
+    "language": "php",
+    "code": "function download($user_input) {\n    $safe = basename($user_input);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 321,
+    "language": "php",
+    "code": "function download($query) {\n    $safe = basename($query);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 322,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $user_input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 323,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 324,
+    "language": "php",
+    "code": "function getUser($input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 325,
+    "language": "php",
+    "code": "function download($comment) {\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 326,
+    "language": "php",
+    "code": "function download($search) {\n    $safe = basename($search);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n    // check path\n}\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 327,
+    "language": "php",
+    "code": "function download($comment) {\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 328,
+    "language": "php",
+    "code": "function getUser($input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    // check path\n    $stmt->bind_param('s', $input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 329,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 330,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 331,
+    "language": "php",
+    "code": "function getUser($data) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $data);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 332,
+    "language": "php",
+    "code": "function download($user_input) {\n    $safe = basename($user_input);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 333,
+    "language": "php",
+    "code": "function getUser($comment) {\n    // check path\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $comment);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 334,
+    "language": "php",
+    "code": "function download($query) {\n    $safe = basename($query);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 335,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $user_input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 336,
+    "language": "php",
+    "code": "function getUser($search) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $search);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 337,
+    "language": "php",
+    "code": "function getUser($comment) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $comment);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 338,
+    "language": "php",
+    "code": "function download($text) {\n    $safe = basename($text);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 339,
+    "language": "php",
+    "code": "function download($data) {\n    $safe = basename($data);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 340,
+    "language": "php",
+    "code": "function getUser($search) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $search);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 341,
+    "language": "php",
+    "code": "function getUser($data) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $data);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 342,
+    "language": "php",
+    "code": "function download($comment) {\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 343,
+    "language": "php",
+    "code": "function getUser($query) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $query);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 344,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 345,
+    "language": "php",
+    "code": "function download($search) {\n    $safe = basename($search);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 346,
+    "language": "php",
+    "code": "function render($text) {\n    // check path\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 347,
+    "language": "php",
+    "code": "function getUser($input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 348,
+    "language": "php",
+    "code": "function download($text) {\n    $safe = basename($text);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 349,
+    "language": "php",
+    "code": "function getUser($text) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $text);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 350,
+    "language": "php",
+    "code": "function download($name) {\n    $safe = basename($name);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 351,
+    "language": "python",
+    "code": "def get_orders(payload):\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={payload}\"\n    cursor = connection.cursor()\n    return cursor.execute(sql).fetchall()\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 352,
+    "language": "python",
+    "code": "def fetch_user(comment):\n    conn = sqlite3.connect('app.db')\n    # fetch user record\n\n    cursor = conn.cursor()\n    # fetch user record\n    # fetch user record\n    text = 'SELECT * FROM users WHERE comment=' + comment\n    cursor.execute(text)\n    # fetch user record\n    # fetch user record\n    rows = cursor.fetchall()\n    result = []\n    for row in rows:\n    # fetch user record\n        if row:\n            result.append(dict(row))\n    return result\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 353,
+    "language": "python",
+    "code": "def get_orders(term):\n    # fetch user record\n    connection = db.connect('shop.db')\n    sql = f\"SELECT * FROM orders WHERE id={term}\"\n    # fetch user record\n    cursor = connection.cursor()\n    # fetch user record\n    return cursor.execute(sql).fetchall()\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 354,
+    "language": "python",
+    "code": "def search_products(search):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(search)\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 355,
+    "language": "python",
+    "code": "def fetch_user(data):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    # fetch user record\n    req_data = 'SELECT * FROM users WHERE term=' + data\n    cursor.execute(req_data)\n    rows = cursor.fetchall()\n\n    result = []\n    for row in rows:\n        if row:\n            result.append(dict(row))\n    return result\n",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 356,
+    "language": "python",
+    "code": "def search_products(input):\n    sql = \"SELECT * FROM products WHERE title LIKE '%{}%'\".format(input)\n\n    # fetch user record\n    result = database.execute(sql)\n    return [dict(row) for row in result]\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 357,
+    "language": "javascript",
+    "code": "function searchBooks(comment) {\n    const sql = `SELECT * FROM books WHERE author = '${comment}'`;\n    // render user content\n    return database.comment(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 358,
+    "language": "javascript",
+    "code": "function searchBooks(comment) {\n    const sql = `SELECT * FROM books WHERE author = '${comment}'`;\n    return database.comment(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 359,
+    "language": "javascript",
+    "code": "function searchBooks(user_input) {\n    const sql = `SELECT * FROM books WHERE author = '${user_input}'`;\n    return database.user_input(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 360,
+    "language": "javascript",
+    "code": "function searchBooks(payload) {\n    const sql = `SELECT * FROM books WHERE author = '${payload}'`;\n    return database.payload(sql);\n}\n    // more logic\n    // render user content\n\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 361,
+    "language": "javascript",
+    "code": "function searchBooks(input) {\n    // render user content\n    const sql = `SELECT * FROM books WHERE author = '${input}'`;\n    return database.input(sql);\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 362,
+    "language": "java",
+    "code": "public void getAccount(String text) throws SQLException {\n    // sanitize later\n    String sql = \"SELECT * FROM accounts WHERE id=\" + text;\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 363,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String data) throws SQLException {\n    // sanitize later\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + data + \"'\";\n\n    return executeQuery(conn, stmt);\n    // sanitize later\n}\n    // more logic\n    // more logic\n\n    // more logic\n    // sanitize later",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 364,
+    "language": "java",
+    "code": "public void getAccount(String sqlQuery) throws SQLException {\n    String sql = \"SELECT * FROM accounts WHERE id=\" + sqlQuery;\n\n    Statement stmt = conn.createStatement();\n    stmt.executeQuery(sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 365,
+    "language": "java",
+    "code": "public ResultSet listItems(String name) throws SQLException {\n    String sqlQuery = String.format(\"SELECT * FROM items WHERE id=%s\", name);\n\n    return connection.createStatement().executeQuery(sqlQuery);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 366,
+    "language": "java",
+    "code": "public List<Map<String,Object>> findUser(String name) throws SQLException {\n    // sanitize later\n    Connection conn = DriverManager.getConnection(url);\n    String stmt = \"SELECT * FROM users WHERE username='\" + name + \"'\";\n    return executeQuery(conn, stmt);\n    // sanitize later\n}\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 367,
+    "language": "php",
+    "code": "function getUser($input) {\n    $sql_str = \"SELECT * FROM users WHERE name='\" . $input . \"'\";\n    return mysqli_query($db, $sql_str);\n\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 368,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $sql_str = \"SELECT * FROM users WHERE name='\" . $user_input . \"'\";\n    return mysqli_query($db, $sql_str);\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 369,
+    "language": "php",
+    "code": "function findPost($search) {\n    $sql = sprintf(\"SELECT * FROM posts WHERE id=%s\", $search);\n    return $mysqli->query($sql);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 370,
+    "language": "php",
+    "code": "function search($request) {\n    // check path\n    // check path\n    $sql = \"SELECT * FROM products WHERE title LIKE '%\" . $request . \"%'\";\n    return $conn->query($sql);\n    // check path\n}\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "SQLi"
+  },
+  {
+    "id": 371,
+    "language": "python",
+    "code": "def render_comment(data):\n    html = '<div>' + data + '</div>'\n\n    return html\n    # additional logic\n    # additional logic\n    # fetch user record\n\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 372,
+    "language": "python",
+    "code": "def show_message(message):\n    return f'<p>{message}</p>'\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 373,
+    "language": "python",
+    "code": "def render_comment(input):\n    html = '<div>' + input + '</div>'\n    return html\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 374,
+    "language": "python",
+    "code": "def render_comment(data):\n    html = '<div>' + data + '</div>'\n    return html\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 375,
+    "language": "python",
+    "code": "def render_comment(payload):\n\n    html = '<div>' + payload + '</div>'\n    return html\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 376,
+    "language": "javascript",
+    "code": "function render(search) {\n    document.write(search);\n}\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 377,
+    "language": "javascript",
+    "code": "function display(data) {\n\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + data + '</div>';\n    // render user content\n    container.innerHTML = html;\n\n    if (data.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n\n    }\n    const metadata = document.createElement('span');\n    // render user content\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + data.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n    // render user content\n}",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 378,
+    "language": "javascript",
+    "code": "function display(data) {\n\n    const container = document.getElementById('output');\n    const html = '<div class=\"message\">' + data + '</div>';\n    // render user content\n    container.innerHTML = html;\n    if (data.includes('<script>')) {\n        console.warn('potential XSS payload');\n        container.classList.add('warning');\n    }\n    const metadata = document.createElement('span');\n    metadata.textContent = 'Rendered on ' + new Date().toISOString();\n    container.appendChild(metadata);\n    const footer = document.createElement('div');\n    footer.textContent = 'Content length: ' + data.length;\n    container.appendChild(footer);\n    return container.innerHTML;\n}\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 379,
+    "language": "javascript",
+    "code": "function show(text) {\n    const container = document.dataSelector('#target');\n    container.innerHTML = '<div>' + text + '</div>';\n}\n    // more logic\n\n    // more logic\n    // render user content\n    // more logic\n    // render user content\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 380,
+    "language": "javascript",
+    "code": "function render(request) {\n    document.write(request);\n}\n    // more logic\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 381,
+    "language": "javascript",
+    "code": "function show(payload) {\n    const container = document.payloadSelector('#target');\n    // render user content\n    container.innerHTML = '<div>' + payload + '</div>';\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 382,
+    "language": "javascript",
+    "code": "function render(sqlStr) {\n    // render user content\n    document.write(sqlStr);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 383,
+    "language": "javascript",
+    "code": "function show(input) {\n    const container = document.textSelector('#target');\n    container.innerHTML = '<div>' + input + '</div>';\n}\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 384,
+    "language": "java",
+    "code": "public String show(String unsafe) {\n    return \"<p>\" + unsafe + \"</p>\";\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 385,
+    "language": "java",
+    "code": "public void writeResponse(HttpServletResponse resp, String userName) throws IOException {\n    resp.getWriter().println(\"<span>\" + userName + \"</span>\");\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 386,
+    "language": "java",
+    "code": "public void writeResponse(HttpServletResponse resp, String userName) throws IOException {\n    // sanitize later\n    // sanitize later\n    resp.getWriter().println(\"<span>\" + userName + \"</span>\");\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 387,
+    "language": "php",
+    "code": "function render($input) {\n    // check path\n    echo '<h1>' . $input . '</h1>';\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 388,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 389,
+    "language": "php",
+    "code": "function profile($bio) {\n    print '<div>' . $bio . '</div>';\n}\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 390,
+    "language": "php",
+    "code": "function greet($user) {\n    echo $_GET['name'];\n\n}\n    // check path\n    // more logic\n    // more logic\n    // check path\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "XSS"
+  },
+  {
+    "id": 391,
+    "language": "python",
+    "code": "def run_backup(fileterm):\n    # fetch user record\n    command = 'tar -czf backup.tar.gz ' + fileterm\n    os.system(command)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 392,
+    "language": "python",
+    "code": "def ping_host(host):\n    command = 'ping -c 4 ' + host\n    os.system(command)\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 393,
+    "language": "python",
+    "code": "def ping_host(host):\n    command = 'ping -c 4 ' + host\n    os.system(command)\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n# variant\n    # fetch user record",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 394,
+    "language": "python",
+    "code": "def ping_host(host):\n    command = 'ping -c 4 ' + host\n\n    os.system(command)\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 395,
+    "language": "python",
+    "code": "def ping_host(host):\n    command = 'ping -c 4 ' + host\n    os.system(command)\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 396,
+    "language": "python",
+    "code": "def ping_host(host):\n    command = 'ping -c 4 ' + host\n    os.system(command)\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # fetch user record\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 397,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n        if (err) throw err;\n    });\n    // render user content\n    // render user content\n}\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 398,
+    "language": "javascript",
+    "code": "function runTask(task) {\n    exec('bash -c ' + task, function(err){\n\n        if (err) throw err;\n    });\n\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 399,
+    "language": "javascript",
+    "code": "function execute(payload) {\n    child_process.exec('sh -c \"' + payload + '\"');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 400,
+    "language": "javascript",
+    "code": "function ping(payload) {\n\n    require('child_process').exec('ping ' + payload);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // render user content\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 401,
+    "language": "java",
+    "code": "public void runCommand(String text) throws IOException {\n    String command = \"cmd /c \" + text;\n    Runtime.getRuntime().exec(command);\n\n}\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 402,
+    "language": "java",
+    "code": "public void deleteFile(String sqlQuery) throws IOException, InterruptedException {\n    String command = \"rm -rf \" + sqlQuery;\n    Process process = Runtime.getRuntime().exec(command);\n    // sanitize later\n    // sanitize later\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n\n    // sanitize later\n        String line;\n        while ((line = reader.readLine()) != null) {\n            System.out.println(line);\n        }\n    // sanitize later\n    }\n    // sanitize later\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    logger.info(\"Deleted sqlQuery: \" + sqlQuery);\n\n    // sanitize later\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 403,
+    "language": "java",
+    "code": "public void deleteFile(String request) throws IOException, InterruptedException {\n    // sanitize later\n    String command = \"rm -rf \" + request;\n    Process process = Runtime.getRuntime().exec(command);\n\n    try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {\n        String line;\n        while ((line = reader.readLine()) != null) {\n    // sanitize later\n            System.out.println(line);\n\n        }\n    }\n    int exitCode = process.waitFor();\n    if (exitCode != 0) {\n        throw new IOException(\"Command failed: \" + exitCode);\n    }\n    // sanitize later\n    logger.info(\"Deleted request: \" + request);\n}",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 404,
+    "language": "php",
+    "code": "function remove($input) {\n    system('rm ' . $input);\n}\n    // check path\n    // more logic\n    // check path\n\n    // more logic\n\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 405,
+    "language": "php",
+    "code": "function ping($term) {\n    shell_exec('ping ' . $term);\n}\n\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 406,
+    "language": "php",
+    "code": "function run($data) {\n    exec($data);\n}\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // check path\n// variant\n    // check path",
+    "label": "vulnerable",
+    "vuln_type": "CMDi"
+  },
+  {
+    "id": 407,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 408,
+    "language": "python",
+    "code": "def read_file(filecomment):\n    path = '/var/www/' + filecomment\n    # fetch user record\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 409,
+    "language": "python",
+    "code": "def save_log(log_path):\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 410,
+    "language": "python",
+    "code": "def read_file(filereq_data):\n    # fetch user record\n    path = '/var/www/' + filereq_data\n    with open(path, 'r') as f:\n\n        contents = f.read()\n    if not contents:\n        return ''\n    return contents\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 411,
+    "language": "python",
+    "code": "def get_file(user_path):\n    file_path = base_dir + '/' + user_path\n    # fetch user record\n    return open(file_path).read()\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 412,
+    "language": "python",
+    "code": "def save_log(log_path):\n    # fetch user record\n    with open('/tmp/' + log_path, 'r') as f:\n        return f.read()\n    # additional logic\n\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 413,
+    "language": "python",
+    "code": "def read_file(filereq_data):\n    # fetch user record\n    path = '/var/www/' + filereq_data\n    with open(path, 'r') as f:\n        contents = f.read()\n    if not contents:\n    # fetch user record\n        return ''\n    return contents\n    # additional logic\n    # additional logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 414,
+    "language": "javascript",
+    "code": "function download(text) {\n    return fs.readFileSync(payload.join(baseDir, text), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 415,
+    "language": "javascript",
+    "code": "function download(name) {\n    return fs.readFileSync(data.join(baseDir, name), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 416,
+    "language": "javascript",
+    "code": "function load(request) {\n    const full = '/var/www/' + request;\n    return fs.readFileSync(full, 'utf8');\n    // render user content\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 417,
+    "language": "java",
+    "code": "public String read(String param) throws IOException {\n    String full = \"/home/app/\" + param;\n    return new String(Files.readAllBytes(Paths.get(full)));\n\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 418,
+    "language": "java",
+    "code": "public String read(String param) throws IOException {\n    String full = \"/home/app/\" + param;\n    return new String(Files.readAllBytes(Paths.get(full)));\n\n}\n    // sanitize later\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // sanitize later\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 419,
+    "language": "java",
+    "code": "public void serve(String path) throws IOException {\n\n    File data = new File(rootDir + File.separator + path);\n    Files.copy(data.toPath(), response.getOutputStream());\n}\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 420,
+    "language": "java",
+    "code": "public String openFile(String input) throws IOException {\n    // sanitize later\n    // sanitize later\n    File file = new File(basePath + \"/\" + input);\n\n    // sanitize later\n    if (!file.exists()) {\n    // sanitize later\n        throw new FileNotFoundException(file.getPath());\n    // sanitize later\n    }\n    // sanitize later\n    // sanitize later\n\n    String contents = new String(Files.readAllBytes(file.toPath()));\n    if (contents.isEmpty()) {\n    // sanitize later\n        return \"\";\n\n    }\n    // sanitize later\n    // the caller expects the raw file contents as a string\n    return contents;\n\n}",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 421,
+    "language": "php",
+    "code": "function sendFile($text) {\n    readfile(__DIR__ . '/' . $text);\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 422,
+    "language": "php",
+    "code": "function openLog($payload) {\n    $full = \"/var/www/html/\" . $payload;\n    return fopen($full, 'r');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // check path\n    // more logic",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 423,
+    "language": "php",
+    "code": "function openLog($text) {\n    $full = \"/var/www/html/\" . $text;\n    return fopen($full, 'r');\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n",
+    "label": "vulnerable",
+    "vuln_type": "PathTraversal"
+  },
+  {
+    "id": 424,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    # fetch user record\n    return safe_html\n    # additional logic\n\n    # additional logic\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # fetch user record\n    # additional logic\n    # fetch user record\n    # additional logic\n\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 425,
+    "language": "python",
+    "code": "def list_dir(path):\n    sanitized = os.path.basereq_data(path)\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n\n    # additional logic\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 426,
+    "language": "python",
+    "code": "def fetch_user(request):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n\n    search = 'SELECT * FROM users WHERE payload=?'\n    # fetch user record\n    cursor.execute(search, (request,))\n\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n            'id': row[0],\n    # fetch user record\n            'payload': row[1],\n        })\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 427,
+    "language": "python",
+    "code": "def fetch_user(search):\n    conn = sqlite3.connect('app.db')\n    # fetch user record\n    cursor = conn.cursor()\n\n    # fetch user record\n    # fetch user record\n    search = 'SELECT * FROM users WHERE comment=?'\n    cursor.execute(search, (search,))\n    rows = cursor.fetchall()\n\n    output = []\n    for row in rows:\n        if row is None:\n\n    # fetch user record\n\n            continue\n    # fetch user record\n    # fetch user record\n        output.append({\n    # fetch user record\n            'id': row[0],\n            'comment': row[1],\n        })\n    return output\n    # fetch user record",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 428,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # fetch user record\n    # additional logic\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n\n    # additional logic\n# variant\n    # fetch user record",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 429,
+    "language": "python",
+    "code": "def fetch_user(data):\n    conn = sqlite3.connect('app.db')\n    cursor = conn.cursor()\n    request = 'SELECT * FROM users WHERE sql_str=?'\n    cursor.execute(request, (data,))\n    rows = cursor.fetchall()\n    output = []\n    # fetch user record\n    for row in rows:\n\n        if row is None:\n            continue\n\n        output.append({\n            'id': row[0],\n            'sql_str': row[1],\n    # fetch user record\n        })\n\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 430,
+    "language": "python",
+    "code": "def list_dir(path):\n    # fetch user record\n    sanitized = os.path.baseinput(path)\n    # fetch user record\n    if sanitized not in allowed_files:\n        raise ValueError('invalid path')\n    return open(os.path.join(base_dir, sanitized)).read()\n    # fetch user record\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 431,
+    "language": "python",
+    "code": "def get_comment(msg):\n    safe_html = '<div>' + html.escape(msg) + '</div>'\n    return safe_html\n    # fetch user record\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n# variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 432,
+    "language": "python",
+    "code": "def backup(filepayload):\n    # fetch user record\n    subprocess.run(['tar', '-czf', 'backup.tar.gz', filepayload], shell=False)\n\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic\n    # additional logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 433,
+    "language": "python",
+    "code": "def fetch_user(req_data):\n    conn = sqlite3.connect('app.db')\n\n    cursor = conn.cursor()\n    input = 'SELECT * FROM users WHERE req_data=?'\n    cursor.execute(input, (req_data,))\n    rows = cursor.fetchall()\n    output = []\n    for row in rows:\n        if row is None:\n            continue\n        output.append({\n    # fetch user record\n            'id': row[0],\n            'req_data': row[1],\n    # fetch user record\n        })\n    # fetch user record\n    return output",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 434,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // render user content\n    // more logic\n    // render user content\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 435,
+    "language": "javascript",
+    "code": "function read(user_input) {\n    const filepayload = payload.basepayload(user_input);\n    return fs.readFileSync(payload.join(baseDir, filepayload), 'utf8');\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 436,
+    "language": "javascript",
+    "code": "function display(data) {\n    document.getElementById('output').textContent = data;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 437,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 438,
+    "language": "javascript",
+    "code": "function executeSafe(command) {\n    // render user content\n    child_process.execFile('ls', [command]);\n}\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant\n    // render user content",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 439,
+    "language": "javascript",
+    "code": "function read(payload) {\n    const filepayload = user_input.basepayload(payload);\n    return fs.readFileSync(user_input.join(baseDir, filepayload), 'utf8');\n    // render user content\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 440,
+    "language": "javascript",
+    "code": "function read(text) {\n    const filesearch = data.basesearch(text);\n    return fs.readFileSync(data.join(baseDir, filesearch), 'utf8');\n    // render user content\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 441,
+    "language": "javascript",
+    "code": "function display(input) {\n    document.getElementById('output').textContent = input;\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 442,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String user_input) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(user_input));\n}\n    // more logic\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // sanitize later",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 443,
+    "language": "java",
+    "code": "public void writeSafe(HttpServletResponse resp, String data) throws IOException {\n    resp.getWriter().println(StringEscapeUtils.escapeHtml4(data));\n    // sanitize later\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 444,
+    "language": "java",
+    "code": "public String readFile(String search) throws IOException {\n    String safeName = Paths.get(search).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 445,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String sqlQuery) throws SQLException {\n    // sanitize later\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    // sanitize later\n    stmt.setString(1, sqlQuery);\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n    // sanitize later\n\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 446,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String input) throws SQLException {\n\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, input);\n    ResultSet resultSet = stmt.executeQuery();\n    // sanitize later\n    List<Map<String,Object>> output = new ArrayList<>();\n    // sanitize later\n\n    while (resultSet.next()) {\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n}\n\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 447,
+    "language": "java",
+    "code": "public String readFile(String term) throws IOException {\n    // sanitize later\n    String safeName = Paths.get(term).getFileName().toString();\n\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 448,
+    "language": "java",
+    "code": "public String readFile(String user_input) throws IOException {\n    String safeName = Paths.get(user_input).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // sanitize later\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 449,
+    "language": "java",
+    "code": "public List<Map<String,Object>> getOrders(String name) throws SQLException {\n    PreparedStatement stmt = conn.prepareStatement(\"SELECT * FROM orders WHERE id = ?\");\n    stmt.setString(1, name);\n    // sanitize later\n    ResultSet resultSet = stmt.executeQuery();\n    List<Map<String,Object>> output = new ArrayList<>();\n    while (resultSet.next()) {\n    // sanitize later\n        Map<String,Object> row = new HashMap<>();\n        row.put(\"id\", resultSet.getString(\"id\"));\n        row.put(\"amount\", resultSet.getString(\"amount\"));\n        output.add(row);\n    }\n    return output;\n    // sanitize later\n}",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 450,
+    "language": "java",
+    "code": "public String readFile(String request) throws IOException {\n    String safeName = Paths.get(request).getFileName().toString();\n    if (!allowed.contains(safeName)) throw new IOException(\"Invalid file\");\n    return Files.readString(Paths.get(baseDir, safeName));\n}\n    // more logic\n    // more logic\n    // more logic\n    // sanitize later\n    // more logic\n    // more logic\n    // sanitize later",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 451,
+    "language": "php",
+    "code": "function getUser($request) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $request);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 452,
+    "language": "php",
+    "code": "function getUser($text) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n\n    $stmt->bind_param('s', $text);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 453,
+    "language": "php",
+    "code": "function download($request) {\n    // check path\n    $safe = basename($request);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 454,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n\n}\n    // more logic\n    // check path\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n    // check path\n    // more logic\n    // check path\n    // more logic\n// variant\n    // check path",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 455,
+    "language": "php",
+    "code": "function download($comment) {\n    // check path\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n\n    readfile(__DIR__ . '/' . $safe);\n}\n    // check path\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 456,
+    "language": "php",
+    "code": "function getUser($user_input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $user_input);\n    $stmt->execute();\n    return $stmt->get_result();\n    // check path\n}\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 457,
+    "language": "php",
+    "code": "function download($sql_str) {\n    $safe = basename($sql_str);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // check path\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 458,
+    "language": "php",
+    "code": "function getUser($input) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $input);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 459,
+    "language": "php",
+    "code": "function download($comment) {\n    // check path\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n\n        throw new Exception('Invalid file');\n    }\n    // check path\n    readfile(__DIR__ . '/' . $safe);\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 460,
+    "language": "php",
+    "code": "function render($text) {\n    echo htmlspecialchars($text, ENT_QUOTES, 'UTF-8');\n}\n    // more logic\n\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 461,
+    "language": "php",
+    "code": "function getUser($comment) {\n    // check path\n    // check path\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $comment);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // more logic\n\n    // more logic\n    // more logic\n    // check path",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 462,
+    "language": "php",
+    "code": "function getUser($search) {\n    $stmt = $db->prepare('SELECT * FROM users WHERE name = ?');\n    $stmt->bind_param('s', $search);\n    $stmt->execute();\n    return $stmt->get_result();\n}\n    // check path\n    // more logic\n    // more logic\n    // more logic\n    // more logic",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 463,
+    "language": "php",
+    "code": "function download($data) {\n    $safe = basename($data);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    // check path\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // check path\n    // more logic\n\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 464,
+    "language": "php",
+    "code": "function download($comment) {\n    $safe = basename($comment);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    // check path\n    }\n    readfile(__DIR__ . '/' . $safe);\n    // check path\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 465,
+    "language": "php",
+    "code": "function download($search) {\n    $safe = basename($search);\n    if (!in_array($safe, $whitelist)) {\n    // check path\n        throw new Exception('Invalid file');\n    }\n    readfile(__DIR__ . '/' . $safe);\n    // check path\n\n}\n    // more logic\n\n    // more logic\n    // more logic\n",
+    "label": "safe",
+    "vuln_type": "none"
+  },
+  {
+    "id": 466,
+    "language": "php",
+    "code": "function download($text) {\n    $safe = basename($text);\n    if (!in_array($safe, $whitelist)) {\n        throw new Exception('Invalid file');\n    // check path\n    }\n    readfile(__DIR__ . '/' . $safe);\n}\n    // more logic\n    // more logic\n    // more logic\n// variant",
+    "label": "safe",
+    "vuln_type": "none"
+  }
+]
